@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistentes Virtuais</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+</head>
+<body id="body">
+    <header>
+        <div class="container">
+            <h1>Segurança da Informação</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><button onclick="toggleDarkMode()">Modo Escuro/Claro</button></li>
+                    <li><button id="increase-font-size">+A</button></li>
+                    <li><button id="decrease-font-size">-A</button></li>
+                    <li><div class="filter-section">
+                        <select id="color-filter">
+                            <option value="default">Daltonismo</option>
+                            <option value="achromatomaly">Acromatopsia</option>
+                            <option value="acromatomia">Acromatomia</option>
+                            <option value="deuteromalacia">Deuteranomalia</option>
+                            <option value="deuteranomaly">Deuteranopia</option>
+                            <option value="tritanomaly">Tritanomalia</option>
+                            <option value="protanomaly">Protanopia</option>
+                        </select>
+                    </div></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <img src="2.png" alt="Assistentes Virtuais">
+        <h2>O que são Assistentes Virtuais?</h2>
+        <p>Assistentes virtuais, como Alexa e Google Home, são dispositivos que utilizam processamento de linguagem natural e inteligência artificial para interagir com os usuários através de comandos de voz. Eles podem realizar várias tarefas, como tocar música, fornecer informações, controlar dispositivos inteligentes e muito mais.</p>
+        <p>Embora ofereçam grande conveniência, é crucial proteger a privacidade e a segurança dos usuários. Os assistentes virtuais coletam e armazenam dados dos usuários, e é importante garantir que esses dados sejam protegidos contra acessos não autorizados e violações de privacidade.</p>
+    </div>
+
+    <div class="content-container">
+        <img src="5.png" alt="Assistentes Virtuais">
+        <h2>Falta de Segurança na Alexa e Google Home</h2>
+        <p>Em 2019, pesquisadores de segurança da empresa alemã Security Research Labs (SRLabs) descobriram vulnerabilidades críticas nos assistentes de voz Amazon Alexa e Google Home, que permitiam a realização de ataques de phishing por voz e a escuta clandestina. </p>
+        <h3>Phishing por Voz:</h3>
+       
+        <p>Como Funciona: Os pesquisadores criaram aplicativos (também chamados de "skills" para Alexa e "actions" 
+       para Google Home) que, uma vez instalados nos dispositivos, poderiam ser usados para enganar os usuários.Esses aplicativos pareciam inofensivos, mas foram programados para imitar comandos legítimos.</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Segurança da Informação. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

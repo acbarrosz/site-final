@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança da Informação</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Segurança da Informação</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><button onclick="toggleDarkMode()">Modo Escuro/Claro</button></li>
+                    <li><button id="increase-font-size">+A</button></li>
+                    <li><button id="decrease-font-size">-A</button></li>
+                    <li><div class="filter-section">
+                        <select id="color-filter">
+                            <option value="default">Daltonismo</option>
+                            <option value="achromatomaly">Acromatopsia</option>
+                            <option value="acromatomia">Acromatomia</option>
+                            <option value="deuteromalacia">Deuteranomalia</option>
+                            <option value="deuteranomaly">Deuteranopia</option>
+                            <option value="tritanomaly">Tritanomalia</option>
+                            <option value="protanomaly">Protanopia</option>
+                        </select>
+                    </div></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <div class="info-container">
+        <div class="info-left" id="o-que-e">
+            <h2>O que é Segurança da Informação?</h2>
+            <p>A segurança da informação diz respeito à proteção de dados contra acessos não autorizados, uso indevido, divulgação, interrupção, modificação ou destruição. Envolve a implementação de políticas, procedimentos e tecnologias para garantir a confidencialidade, integridade e disponibilidade dos dados.</p>
+        </div>
+        <div class="info-right">
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+            <dotlottie-player src="https://lottie.host/d632ccd5-4d42-4303-baf6-6ac572cae0b2/KEWXqVwgca.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        </div>
+    </div>
+    <div class="container">
+        <div class="block" id="analise-de-dados">
+            <a href="analise.html">
+                <i class="fas fa-chart-line"></i>
+                <h2>Análise de Dados</h2>
+                <button class="continue-btn"><i class="fas fa-arrow-right"></i></button>
+            </a>
+        </div>
+        <div class="block" id="assistentes-virtuais">
+            <a href="assistente.html">
+                <i class="fas fa-microphone"></i>
+                <h2>Assistentes Virtuais</h2>
+                <button class="continue-btn"><i class="fas fa-arrow-right"></i></button>
+            </a>
+        </div>
+        <div class="block" id="tecnologias-fraudes">
+            <a href="fraude.html">
+                <i class="fas fa-shield-alt"></i>
+                <h2>Identificação de Fraudes</h2>
+                <button class="continue-btn"><i class="fas fa-arrow-right"></i></button>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Segurança da Informação. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

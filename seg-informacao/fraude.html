@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificação de Fraudes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+</head>
+<body id="body">
+    <header>
+        <div class="container">
+            <h1>Segurança da Informação</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><button onclick="toggleDarkMode()">Modo Escuro/Claro</button></li>
+                    <li><button id="increase-font-size">+A</button></li>
+                    <li><button id="decrease-font-size">-A</button></li>
+                    <li><div class="filter-section">
+                        <select id="color-filter">
+                            <option value="default">Daltonismo</option>
+                            <option value="achromatomaly">Acromatopsia</option>
+                            <option value="acromatomia">Acromatomia</option>
+                            <option value="deuteromalacia">Deuteranomalia</option>
+                            <option value="deuteranomaly">Deuteranopia</option>
+                            <option value="tritanomaly">Tritanomalia</option>
+                            <option value="protanomaly">Protanopia</option>
+                        </select>
+                    </div></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <img src="3.png" alt="Identificação de Fraudes">
+        <h2>Tecnologias para Identificação de Fraudes</h2>
+        <p>A identificação de fraudes envolve o uso de tecnologias avançadas, como aprendizado de máquina e análise comportamental, para detectar atividades fraudulentas em tempo real. Essas tecnologias analisam grandes volumes de dados para identificar padrões suspeitos e anomalias que possam indicar fraude.</p>
+        <p>É essencial garantir que essas tecnologias sejam implementadas de maneira segura e que os dados utilizados sejam protegidos contra acessos não autorizados. A segurança da informação desempenha um papel fundamental na precisão e confiabilidade dos sistemas de detecção de fraudes.</p>
+        <h3>Principais tecnologias utilizadas:</h3>
+        <p>Verificação de Dispositivos e Localização</p>
+        <p>Monitoramento em Tempo Real</p>
+        <p>Biometria e Reconhecimento de Voz</p>
+        <p>Análise de Redes Sociais e Dados Externos</p>   </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Segurança da Informação. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

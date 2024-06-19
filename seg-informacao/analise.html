@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Dados</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+</head>
+<body id="body">
+    <header>
+        <div class="container">
+            <h1>Segurança da Informação</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><button onclick="toggleDarkMode()" aria-label="Alternar Modo Escuro/Claro">Modo Escuro/Claro</button></li>
+                    <li><button id="increase-font-size" aria-label="Aumentar Fonte">+A</button></li>
+                    <li><button id="decrease-font-size" aria-label="Diminuir Fonte">-A</button></li>
+                    <li>
+                        <div class="filter-section">
+                            <label for="color-filter">Daltonismo:</label>
+                            <select id="color-filter" aria-label="Selecionar filtro de daltonismo">
+                                <option value="default">Padrão</option>
+                                <option value="achromatomaly">Acromatopsia</option>
+                                <option value="acromatomia">Acromatomia</option>
+                                <option value="deuteromalacia">Deuteranomalia</option>
+                                <option value="deuteranomaly">Deuteranopia</option>
+                                <option value="tritanomaly">Tritanomalia</option>
+                                <option value="protanomaly">Protanopia</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <img src="1.png" alt="Gráfico representando Análise de Dados">
+        <h2>O que é Análise de Dados?</h2>
+        <p>A análise de dados é o processo de inspecionar, limpar e modelar dados com o objetivo de descobrir informações úteis, formar conclusões e apoiar a tomada de decisões. Envolve várias técnicas e ferramentas para analisar grandes volumes de dados e identificar padrões e tendências.</p>
+        <p>Com o aumento da quantidade de dados gerados diariamente, a análise de dados tornou-se uma habilidade crucial em diversos setores, incluindo finanças, saúde, marketing e tecnologia. Técnicas como estatística, aprendizado de máquina e visualização de dados são frequentemente utilizadas para extrair insights valiosos dos dados.</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Segurança da Informação. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
